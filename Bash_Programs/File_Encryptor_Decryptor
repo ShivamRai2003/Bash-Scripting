@@ -1,0 +1,25 @@
+#!/bin/bash
+
+echo "Welcome ! This is a simple encrypter/decrypter"
+echo "Please Choose what you want to do"
+
+choice="Encrypt decrypt"
+
+select option in $choice; do
+        if [ $REPLY = 1 ]
+then
+        echo "You Have Selected Encryption!"
+        echo "Please Enter the file Name"
+        read file;
+        gpg -c $file
+        echo "The Files has been encrypted !"
+
+else
+        echo"You Have Selected Decryption"
+        echo"Please Enter the file name"
+        read file2;
+        gpg -d $file2
+fi
+
+# Your Ideas are welcomed !
+
