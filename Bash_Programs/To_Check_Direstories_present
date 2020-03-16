@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "To check wheter the directory or file id present"
+
+if [ -d /usr/share/wordlists ];
+then
+      echo "File Present !"
+else
+      echo "File not present!"
+fi
+
+# -d is for directory and -e is for file present or not !
