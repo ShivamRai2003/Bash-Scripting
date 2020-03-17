@@ -1,0 +1,15 @@
+echo "Welcome to this program ! this will basically tells your system_info"
+
+#!/bin/bash
+
+echo "Hey ! Following are the system info for your pc !"
+
+hostname
+uname -r
+uname -m
+date
+df -h
+
+echo "Thanks for using the scripts !"
+
+echo "Fell Free to add the Funcitionaly in the script !"
