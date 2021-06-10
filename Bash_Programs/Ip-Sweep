@@ -1,0 +1,18 @@
+#!/bin/bash
+#Author : Shivam-Rai
+#Description : This Is Script to Ping Multiple Hosts
+#Date:6/10/2021
+#Time:6:00pm
+
+IPLIST="dir/name"
+
+for ip in $(cat $IPLIST)
+do
+ping -c1 $ip
+        if [ $? -eq 0 ]
+        then
+        echo "Connection Established"
+        else
+        echo "Connection Not Established"
+        fi
+done
