@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #Author: ShivamRai
 #Date:/6/16/2021
-#Description: The following script will perform subdomain enumeration with SubScraper and pass the results to Tomnomnom’s httprobe to check for live hosts.
+#Description: The following script will perform subdomain enumeration with Sublis3r and pass the results to Tomnomnom’s httprobe to check for live hosts.
 #Usage:<scriptname> <domain.name.com>
 
 target=$1
